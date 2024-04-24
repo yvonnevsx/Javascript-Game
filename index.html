@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+    <link rel="stylesheet" href="./styles/styles.css " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img id="switch" src="img/switch.png" alt="">
+
+    <!-- pop-up with instructions -->
+    <div id="pop_up_tutorial">
+      <div id="pop_up_content">
+        <h1>You've just arrived in Fireside </h1>
+        <p>Go and explore use the W-A-S-D keys to walk around</p>
+        <p>Head over to the platform to maybe encounter some battles</p>
+        <button id="close_pop_up">Close</button>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div id="overlappingDiv"></div>
+
+      <canvas></canvas>
+
+      <div id="userInterface">
+        <!----------- health of enemy -------------->
+        <div class="statusBlockEnemy">
+          <h1>Draggle</h1>
+          <div class="healthBarContainer">
+            <div class="healthBar"></div>
+            <div id="enemyHealthBar"></div>
+          </div>
+        </div>
+        <!----------- health of emby -------------->
+        <div class="statusBlock">
+          <h1>Emby</h1>
+          <div class="healthBarContainer">
+            <div class="healthBar"></div>
+            <div id="playerHealthBar"></div>
+          </div>
+        </div>
+
+        <!-------------game ----------------->
+
+        <div class="attackBar">
+          <div id="dialogueBox">wewewew</div>
+          <div id="attacksBox"></div>
+          <div id="attackType">
+            <h1>Attack type</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+      integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="data/audio.js"></script>
+    <script src="data/battlezones.js"></script>
+    <script src="data/collisions.js"></script>
+    <script src="data/attacks.js"></script>
+    <script src="data/monsters.js"></script>
+    <script src="./scripts/classes.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/battlescene.js"></script>
+  </body>
+</html>
